@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Markdown Calculator App</h1>
+  <p>
+    Markdown is a reduction of the product price, basing on the inability to sell it at the initial price or original selling price. In other words, markdown is the difference between the original retail price and the actual selling price.
+  </p>
+  <p>
+    Source: https://www.omnicalculator.com/finance/markdown
+  </p>
+  <br/>
+
+  <img src="https://cdn.jsdelivr.net/gh/Kouwalski/canapecastillochan@master/personal-loan-1.jpg">
+  
+<ion-item>
+  <ion-label>Original Price:</ion-label>
+  <ion-input type="number" [(ngModel)]="op"></ion-input>
+</ion-item>
+
+<ion-item>
+   <ion-label>Selling Price:</ion-label>
+    <ion-input type="number" [(ngModel)]="sp"></ion-input>
+</ion-item>
+
+<button ion-button color="secondary" (click)="calculateMCA()" >CALCULATE</button>
+
+<ion-item *ngIf="s">
+  <ion-label>Savings: {{s}} </ion-label>
+</ion-item>
+
+<ion-item *ngIf="mr">
+  <ion-label>Markdown Rate: {{mr}}% </ion-label>
+</ion-item>
