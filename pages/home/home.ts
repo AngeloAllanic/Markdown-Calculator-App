@@ -6,6 +6,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html',
   styleUrls: ['home.css']
 })
+
 export class HomePage {
   op: number;
   sp: number;
